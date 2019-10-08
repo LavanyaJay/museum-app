@@ -1,0 +1,100 @@
+body {
+    border: 2px blue solid;
+    background-color: rgb(255, 186, 0);
+}
+
+main {
+    text-align: center;
+    border: 1px grey solid;
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+section {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    border: 1px black solid;
+    text-align: center;
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    border: 1px black solid;
+    text-align: center;
+    display: inline-block;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+ img {
+    border: 2px solid orange;
+    height:250px;
+    width:200px;
+    box-shadow: 3px 3px 0px #999;
+    margin-right: 2px;
+    margin-bottom: 2px;
+ }
+
+ img:hover{
+     transform: scale(1.1);
+     box-shadow: none;
+     padding: 5px;
+    border: solid 2px black;
+ }
+
+ footer {
+    border: 1px grey solid;
+    display: block;
+    margin: 3rem;
+    text-align: center;
+   
+ }
+ .box > div {
+    background-color: maroon;
+    text-align: center;
+    
+    width: 70px;
+    margin: 5px;
+ }
+ div {
+    animation: myanim 4s infinite;
+ }
+ @keyframes myanim {
+    50% {
+       flex: 1 1 0;
+    }
+ }
+
+ @media screen and (max-width: 760px){
+     img {
+         height: 100px;
+         width: 70px
+     }
+     .box > div {
+        background-color: maroon;
+        text-align: center;
+        width: 30px;
+        
+     }
+ }
+
+    
+
+ 
+  
+  
