@@ -1,12 +1,16 @@
 body {
-    border: 1px blue solid;
+    border: 2px blue solid;
     background-color: rgb(255, 186, 0);
 }
 
 main {
+    text-align: center;
     border: 1px grey solid;
-    background-color: white; width: 90%;
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
     margin: auto;
+    margin-top: 100px;
 }
 
 section {
@@ -15,15 +19,17 @@ section {
 }
 
 h1 {
+    font-family: 'Inconsolata', monospace;
     border: 1px black solid;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 h2 {
+    font-family: 'Inconsolata', monospace;
     border: 1px black solid;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 .box{
@@ -70,8 +76,21 @@ h2 {
  }
  @keyframes myanim {
     50% {
-       flex: 1;
+       flex: 1 1 0;
     }
+ }
+
+ @media screen and (max-width: 760px){
+     img {
+         height: 100px;
+         width: 70px
+     }
+     .box > div {
+        background-color: maroon;
+        text-align: center;
+        width: 30px;
+        
+     }
  }
 
     
