@@ -4,9 +4,9 @@ function submitComment(){
     console.log("Input Field");
     const name = inputField.value;
     console.log(name);
-    const msgtext = document.getElementById("msg");
-    console.log(msgtext);
-    const msg = msgtext.value;
+    const msgText = document.getElementById("msg");
+    console.log(msgText);
+    const msg = msgText.value;
     console.log(msg)
     const comment = document.createElement('section');
     const h3 = document.createElement('h3');
@@ -17,6 +17,10 @@ function submitComment(){
     comment.appendChild(h3);
     comment.appendChild(p);
     console.log(comment);
+    const commentSection = document.getElementById("content");
+    commentSection.appendChild(comment);
+    inputField.value = null;
+    msgText.value = null;
 
 
 }
