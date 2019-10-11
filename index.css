@@ -64,7 +64,7 @@ h2 {
     text-align: center;
    
  }
- .box > div {
+ /*.box > div {
     background-color: maroon;
     text-align: center;
     
@@ -79,6 +79,7 @@ h2 {
        flex: 1 1 0;
     }
  }
+ */
 
  @media screen and (max-width: 760px){
      img {
